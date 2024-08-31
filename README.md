@@ -65,7 +65,7 @@ There are many students around the world who want to learn coding but they donâ€
 - **Educational Access:** Makes coding accessible and reduces barriers for beginners.
 - **Skill Development:** Accelerates learning and builds a strong coding foundation.
 - **Community Building:** Fosters a supportive and collaborative learning community.
-- **Career Opportunities:** Enhances employability and bridges the tech industry skill gap
+- **Career Opportunities:** Enhances employability and bridges the tech industry skill gap.
 
 
 
