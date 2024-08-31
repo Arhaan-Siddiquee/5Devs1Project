@@ -14,11 +14,12 @@ const Login = () => {
 	};
 
 	return (
+		<div style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400 }}>
 		<div className='min-h-screen flex items-center justify-center bg-black'>
 			<div className='bg-black border border-gray-300 p-8 rounded-lg shadow-lg w-full max-w-md'>
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
 					Login
-					<span className='text-blue-500'>10xCoders</span>
+					<span className='text-cyan-500'>10xCoders</span>
 				</h1>
 
 				<form onSubmit={handleSubmit}>
@@ -47,17 +48,18 @@ const Login = () => {
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</div>
-					<Link to='/signup' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block text-white'>
+					<Link to='/signup' className='text-sm  hover:underline hover:text-cyan-500 mt-2 inline-block text-white'>
 						{"Don't"} have an account?
 					</Link>
 
 					<div>
-						<button className='btn btn-block btn-sm mt-2 text-whitebg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded bg-blue-700' disabled={loading}>
+						<button className='btn btn-block btn-sm mt-2 text-whitebg-blue-500 hover:text-cyan-500 text-white font-bold py-2 px-4 rounded bg-cyan-500' disabled={loading}>
 							{loading ? <span className='loading loading-spinner '></span> : "Login"}
 						</button>
 					</div>
 				</form>
 			</div>
+		</div>
 		</div>
 	);
 };
