@@ -1,27 +1,23 @@
-import React from 'react';
-import Navbar from './Components/Navbar';
-//import AuthPage from './Components/AuthPage';
-import Home from './Components/Home';
-import Roadmap from './Components/Roadmap';
-import Aboutus from './Components/Aboutus';
-import Community from './Components/Community';
-import Findevents from './Components/Findevents';
-import Aitutor from './Components/Aitutor';
-import Footer from './Components/Footer';
+
+import { Navigate, Route, Routes } from "react-router-dom";
+import Main from "./pages/home/Main";
+import Login from "./pages/login/Login";
+import SignUp from "./pages/signup/SignUp";
+import { Toaster } from "react-hot-toast";
+import { useAuthContext } from "./context/AuthContext";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Home />
-      <Roadmap />
-      <Community />
-      <Aitutor />
-      <Findevents />
-      <Aboutus />
-      <Footer />
-    </>
-  );
+	const { authUser } = useAuthContext();
+	return (
+		<div>
+			<Routes>
+				<Route path='/*' element={authUser ? <Main /> : <Navigate to={`/login`} />} />
+				<Route path='/login' element={authUser ? <Navigate to='/' /> : <Login />} />
+				<Route path='/signup' element={authUser ? <Navigate to='/' /> : <SignUp />} />
+			</Routes>
+			<Toaster />
+		</div>
+	);
 }
 
 export default App;

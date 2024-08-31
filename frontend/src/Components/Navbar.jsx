@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import navbarlogo from '../assets/navbarlogo.png'; // Adjust the import path if needed
+import UserProfile from './UserProfile';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,7 +76,9 @@ const Navbar = () => {
                 About Us
               </a>
             </li>
+            
           </ul>
+          <div className="block py-2 pl-2 pr-2 text-gray-300 border-b border-transparent hover:border-cyan-500 hover:text-cyan-500 transition-all duration-300"><UserProfile/></div>
         </div>
       </div>
     </nav>
