@@ -9,6 +9,7 @@ import CommunityImg from '../Assets/Community.png';
 
 const Home = () => {
   return (
+    <div style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400 }}>
     <div id="home" className="bg-black text-white min-h-screen flex flex-col items-center justify-center pt-24 lg:pt-0 relative overflow-hidden">
       <img 
         src={Gradient1} 
@@ -49,6 +50,7 @@ const Home = () => {
           <p className="text-lg font-semibold mb-2 text-center">EVENTS</p>
           <p className="text-sm font-thin text-left hidden md:block">Stay ahead with curated events and tips.</p>
         </a> 
+      </div>
       </div>
     </div>
   );

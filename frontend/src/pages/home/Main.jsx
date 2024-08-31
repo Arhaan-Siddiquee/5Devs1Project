@@ -25,9 +25,6 @@ const Main = () => {
       <Aboutus />
       <Footer />
 
-
-      <LogoutButton/>
-
 		</>
 	);
 };

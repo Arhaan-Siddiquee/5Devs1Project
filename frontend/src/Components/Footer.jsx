@@ -3,6 +3,7 @@ import navbarlogo from '../assets/navbarlogo.png';
 
 const Footer = () => {
   return (
+    <div style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400 }}>
     <>
       <div className="h-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 shadow-md"></div>
 
@@ -71,6 +72,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
+    </div>
   );
 };
 

@@ -5,10 +5,10 @@ const Profilename = () => {
 	const { authUser } = useAuthContext();
 	return (
 		<div className=''>
-			<div className='flex'>
+			<div className='flex mt-2'>
 				<div className='w-8 rounded-full'>
-				<img src={authUser.profilePic} alt='user avatar' />
-					</div><p>{authUser.fullName}</p>
+				<img src={authUser.profilePic} alt='user avatar' className='mx-3' />
+					</div><p className='mx-5'>{authUser.fullName}</p>
 			</div>
 		</div>
 	);
